@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+    <style>
+        h1 {
+            color: darkcyan;
+        }
+
+        .colorAqua {
+            color: aqua;
+        }
+
+        .colorCrimson {
+            color: crimson;
+        }
+
+        .colorRGB {
+            color: rgb(123, 169, 247);
+            background-color: rgba(121, 240, 7, 1);
+        }
+
+        .colorHex {
+            color: #09AA34;
+        }
+
+        .colorHSL {
+            color: hsla(120, 100%, 75%, 0.3);
+        }
+
+        body {
+            background-image: url("https://www.w3schools.com/css/img_tree.png");
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: scroll;
+        }
+
+        .font25px {
+            font-size: 30px;
+            color: black;
+            text-decoration: underline;
+        }
+
+        .fontRelativeText {
+            font-size: xx-large;
+            color: black;
+            font-style: italic;
+            /* text-decoration:overline;*/
+
+        }
+
+        .fontRelativeEm {
+            font-size: 2em;
+            color: black;
+            font-family: MyCustomFont;
+            font-weight: normal;
+            text-decoration: line-through;
+        }
+
+        @font-face {
+            font-family: MyCustomFont;
+            src: url("sansation_light.woff");
+        }
+
+        p {
+            text-align: justify;
+            /*
+        border-width:3px;
+        border-color:red;
+        border-style:solid;
+        */
+            border: red 5px ridge;
+            border-radius: 10px;
+        }
+
+        .dropShadow {
+            box-shadow: 10px 10px 5px grey;
+        }
+
+        .textShadow {
+            text-shadow: 10px 10px 5px green;
+        }
+
+        a:hover {
+            text-shadow: 10px 10px 5px green;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="colorHSL">Link</h1>
+    <a href="https://www.metallica.com" target="_blank">
+        Visit Metallica Now!
+    </a>
+    <br /><br /><br />
+    <a href="https://www.guitar.com" target="_blank">
+        Visit Guitar Now!
+    </a>
+    <br /><br /><br />
+
+    <!-- HTML comments added img tag at 919pm - azad -->
+    <!-- disabled image section on 10-Nov at 750pm - azad -->
+
+    <img height="200" width="100" alt="Green Car" src="https://i.ibb.co/30Vny9M/car.jpg" />
+    <a href="https://www.bobtomesford.com/inventoryphotos/5791/1fa6p8cf6l5100895/ip/1.jpg?height=400" target="_blank">
+        <img height="200" alt="Green Car"
+            src="https://www.bobtomesford.com/inventoryphotos/5791/1fa6p8cf6l5100895/ip/1.jpg?height=400" />
+    </a>
+
+    <img id="car" src="https://i.ibb.co/30Vny9M/car.jpg" height="100" />
+    <hr />
+
+    <h1 class="colorRGB">Unordered List</h1>
+    <ul>
+        <li class="colorAqua">Limes</li>
+        <li class="colorAqua">Chili</li>
+        <li class="colorAqua">Onions</li>
+    </ul>
+    <hr />
+    <h1 class="colorHex">Ordered List</h1>
+    <ol>
+        <li class="colorAqua">Limes</li>
+        <li class="colorAqua">Chili</li>
+        <li class="colorAqua">Onions</li>
+    </ol>
+
+    <hr />
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4 class="colorAqua">Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+    <hr />
+    <h2>Black Cat</h2>
+    <p class="colorAqua dropShadow">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis, <em class="colorCrimson">neque ornare
+            commodo elementum, neque lorem vehicula felis, eget tempus sapien erat quis felis.</em> Quisque a est sit
+        amet risus placerat efficitur. Cras neque velit, aliquam vitae nunc ut, luctus euismod justo. Mauris et orci
+        mauris. Maecenas pretium tortor sagittis, vehicula justo a, euismod purus. <strong
+            class="font25px">Etiam</strong> condimentum luctus ultrices. Vestibulum bibendum dictum velit sit amet
+        venenatis. <strong class="fontRelativeText">Proin ut purus velit.</strong> Donec quis lobortis massa. Nullam in
+        fringilla arcu. Nam tellus elit, accumsan nec est id, fringilla congue purus. <strong
+            class="fontRelativeEm textShadow">Proin a lobortis turpis.</strong> Morbi quis ipsum facilisis, hendrerit ex
+        vel, vulputate risus.
+    </p>
+    <p class="textShadow">
+        Ut rhoncus lectus metus, sit amet pharetra dui sodales in. Integer vitae ex rhoncus, dapibus dolor sed, gravida
+        justo. Fusce luctus nisl eu odio accumsan, a viverra tellus bibendum. In hac habitasse platea dictumst.
+        <br />Aliquam a justo convallis, semper nulla hendrerit, feugiat tellus. Ut bibendum ipsum erat, quis convallis
+        ligula elementum in. <br />Suspendisse sollicitudin lorem sed diam vestibulum commodo. <br />Cras consectetur
+        dolor vitae felis posuere molestie. Phasellus at mi at lorem ultrices posuere quis a libero.
+    </p>
+</body>
+
+</html>
