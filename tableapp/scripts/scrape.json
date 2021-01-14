@@ -1,0 +1,238 @@
+{
+    "_id": "metacritic",
+    "startUrl": [
+        "https://www.metacritic.com/"
+    ],
+    "selectors": [
+        {
+            "id": "movies-all-time",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "a[section='Movies of All Time']",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "paging-2",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(2) a.page_num",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "movie-link",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "paging-2",
+                "paging-3",
+                "paging-1",
+                "paging-4",
+                "paging-5",
+                "paging-6",
+                "paging-7"
+            ],
+            "selector": "a.title",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "movie-title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": "h1",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-year",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": "span.release_year",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-metascore",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".ms_wrapper span.metascore_w",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-userscore",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": "span.user.larger",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-distributor",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".distributor a",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-release",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".release_date span:nth-of-type(2)",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-rating",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".rating span:nth-of-type(2)",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-cast",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": "div.summary_cast span:nth-of-type(2)",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-summary",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".summary_deck span span",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-director",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".director a span",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-genre",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".genres span span",
+            "multiple": true,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "movie-runtime",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movie-link"
+            ],
+            "selector": ".runtime span:nth-of-type(2)",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "paging-3",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(3) a.page_num",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "paging-1",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": ".first_page a",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "paging-4",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(4) a.page_num",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "paging-5",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(5) a.page_num",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "paging-6",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(6) a.page_num",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "paging-7",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "movies-all-time"
+            ],
+            "selector": "li:nth-of-type(7) a.page_num",
+            "multiple": false,
+            "delay": 0
+        }
+    ]
+}

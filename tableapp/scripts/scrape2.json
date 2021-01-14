@@ -1,0 +1,62 @@
+{
+    "_id": "vocket-teknologi-pg21",
+    "startUrl": [
+        "https://www.thevocket.com/teknologi/page/21/"
+    ],
+    "selectors": [
+        {
+            "id": "article-link",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": ".title a",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "article-title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "article-link"
+            ],
+            "selector": ".title a",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "article-body",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "article-link"
+            ],
+            "selector": "div.essay p",
+            "multiple": true,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "article-date",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "article-link"
+            ],
+            "selector": "span.essay-date",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "article-author",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "article-link"
+            ],
+            "selector": ".author a",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}
